@@ -6,13 +6,13 @@ body {
 }
 
 nav {
-    background-color: #161718; 
+    background-color: #000000; 
 }
 
 span {
     font-weight: bold;
     font-size: 30px;
-    color: #f8ad0a;
+    color: #ffffff;
 }
 
 h1 {
@@ -34,4 +34,12 @@ p {
     font-size: 24px;
     font-weight: 400; 
     color: #000000;
+}
+
+/*
+.palette {
+    sfondo: 
+    titolo:
+    primary:
+    secondary:
 }
