@@ -6,4 +6,5 @@ async function fetchTrending() {
     document.getElementById("coinRank").innerHTML = trending[0].market_cap_rank
     document.getElementById("coinPrice").innerHTML = trending[0].current_price
     document.getElementById("coinPercentage").innerHTML = trending[0].price_change_percentage_24h
+    document.getElementById("coinImg").src = trending[0].image
 }
