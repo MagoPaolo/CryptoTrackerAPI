@@ -28,13 +28,15 @@
     </nav>
 
     <!--BANNER-->
-    <div class="container-fluid" style="text-align: center; height: 400px; background-image: url(../images/banner-bg.jpg); padding: 40px 20px;">
+    <div class="container-fluid"
+        style="text-align: center; height: 400px; background-image: url(../images/banner-bg.jpg); padding: 40px 20px;">
+        <button class="btn btn-light" style="padding: 5px 20px; margin-top: 20px;"
+            onclick="fetchTrending()">FETCH</button>
         <h1>Crypto Tracker</h1>
-        <p>Il prezzo delle tue crypto preferite in tempo reale!</p>
-        <button class="btn btn-dark" style="padding: 5px 20px; margin-top: 20px;" onclick="fetchTrending()">FETCH</button>
+        <h6>Il prezzo delle tue crypto preferite in tempo reale!</h6>
     </div>
 
-    <!--BANNER-->
+    <!--TABLE-->
     <div class="container" style="margin-top: 30px; text-align: center;">
         <table class="table table-bordered">
             <tr>
@@ -49,10 +51,20 @@
                 <td id="coinRank"></td>
                 <td id="coinPrice"></td>
                 <td id="coinPercentage"></td>
-                <td><img id="coinImg" width="36px" height="36px></td>
+                <td><img id="coinImg" width="36px" height="36px"></td>
             </tr>
         </table>
     </div>
+
+    <!--COIN-->
+    <div class="container" style="text-align: center;">
+        <a href="#">
+            <img id="coin1Img" width="36px" height="36px">
+            <p id="coin1Name"></p>
+        </a>
+    </div>
+
+
 
     <script src="script.js"></script>
 </body>
