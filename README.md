@@ -1,17 +1,17 @@
 
-# CryptoTrackerAPI
+# Crypto tracker
 
 Rimani aggiornato sui prezzi delle tue crypto preferite in tempo reale
-
-
 
 ## Roadmap
 
 - Selezione valuta
 - Modalità notturna
 
+## API Reference
 
-## Authors
+- [CoinGeckoAPI](https://www.coingecko.com/it/api/documentation)
 
-- [@PolTheWizard](https://www.github.com/PolTheWizard)
+## Author
 
+[@PolTheWizard](https://www.github.com/PolTheWizard)
