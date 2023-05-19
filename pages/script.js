@@ -5,18 +5,15 @@ async function fetchTrending() {
 }
 
 function assignTrending(trending) {
-    for (let i = 1; i < 4; i++) {
-        document.getElementById("trendingTitle" + i).innerHTML = trending[i-1].name
-        document.getElementById("trendingPrice" + i).innerHTML = trending[i-1].current_price
-        document.getElementById("trendingChangeP" + i).innerHTML = trending[i-1].price_change_percentage_24h.toFixed(2)
-        document.getElementById("trendingChange" + i).innerHTML = trending[i-1].price_change_24h.toFixed(2)
+    for (let i = 1; i < 6; i++) {
+        document.getElementById("trendingName" + i).innerHTML = trending[i-1].name
+        document.getElementById("trendingPrice" + i).innerHTML = "$" + trending[i-1].current_price
+        document.getElementById("trendingChangeP" + i).innerHTML = trending[i-1].price_change_percentage_24h.toFixed(2) + " %"
         document.getElementById("trendingImg" + i).src = trending[i-1].image
+        if(trending[i-1].price_change_percentage_24h >= 0) {
+            document.getElementById("trendingChangeP" + i).style.color = "#06ad00"
+        } else {
+            document.getElementById("trendingChangeP" + i).style.color = "#ad0000"
+        }
     }
 }
-
-
-
-
-
-
-
