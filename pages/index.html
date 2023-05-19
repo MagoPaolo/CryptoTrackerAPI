@@ -34,7 +34,8 @@
         <h2>Crypto Tracker</h2>
         <h6 style="margin-top: 20px;">Il prezzo delle tue crypto preferite in tempo reale!</h6>
 
-        <div class="container" style="text-align: center; margin-top: 90px; display: flex; justify-content: center;">
+        <div class="container-fluid"
+            style="text-align: center; margin-top: 90px; display: flex; justify-content: center;">
             <a href="#" style="margin: 0px 50px">
                 <img id="trendingImg1" width="100" height="100">
                 <br>
@@ -87,11 +88,66 @@
 
     <!--TABLE-->
     <div class="container" style="margin-top: 30px; text-align: center;">
-        <button class="btn btn-dark" style="padding: 5px 20px; margin-bottom: 20px;"
-            onclick="fetchTrending()">FETCH</button>
+        <button class="btn btn-dark" style="padding: 5px 20px; margin-bottom: 20px;" onclick="fetchData()">
+            FETCH
+        </button>
+
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>24h%</th>
+                    <th>7d%</th>
+                    <th>30d%</th>
+                    <th>Market cap</th>
+                    <th>Sparkline</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="tableRank1"></td>
+                    <td id="tableName1"></td>
+                    <td id="tablePrice1"></td>
+                    <td id="table24P1"></td>
+                    <td id="table7P1"></td>
+                    <td id="table30P1"></td>
+                    <td id="tableMarketcap1"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline1" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank2"></td>
+                    <td id="tableName2"></td>
+                    <td id="tablePrice2"></td>
+                    <td id="table24P2"></td>
+                    <td id="table7P2"></td>
+                    <td id="table30P2"></td>
+                    <td id="tableMarketcap2"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline2" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank3"></td>
+                    <td id="tableName3"></td>
+                    <td id="tablePrice3"></td>
+                    <td id="table24P3"></td>
+                    <td id="table7P3"></td>
+                    <td id="table30P3"></td>
+                    <td id="tableMarketcap3"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline3" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>
