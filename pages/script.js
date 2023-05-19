@@ -1,5 +1,5 @@
 async function fetchData() {
-    const response = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=true&price_change_percentage=24h%2C7d%2C30d&locale=en");
+    const response = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25&page=1&sparkline=true&price_change_percentage=24h%2C7d%2C30d&locale=en");
     const dataAPI = await response.json();
     assignTrending(dataAPI);
     assignTable(dataAPI);
@@ -21,7 +21,7 @@ function assignTrending(dataAPI) {
 }
 
 function assignTable(dataAPI) {
-    for (let i = 1; i < 16; i++) {
+    for (let i = 1; i < 26; i++) {
         document.getElementById("tableRank" + i).innerHTML = dataAPI[i - 1].market_cap_rank
         document.getElementById("tableRank" + i).style.fontWeight = "600"
         document.getElementById("tableImg" + i).src = dataAPI[i - 1].image
