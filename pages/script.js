@@ -9,19 +9,21 @@ function assignTrending(dataAPI) {
     for (let i = 1; i < 6; i++) {
         document.getElementById("trendingName" + i).innerHTML = dataAPI[i - 1].name
         document.getElementById("trendingPrice" + i).innerHTML = "$" + dataAPI[i - 1].current_price
-        document.getElementById("trendingChangeP" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h.toFixed(2) + " %"
         document.getElementById("trendingImg" + i).src = dataAPI[i - 1].image
         if (dataAPI[i - 1].price_change_percentage_24h >= 0) {
+            document.getElementById("trendingChangeP" + i).innerHTML = "+" + dataAPI[i - 1].price_change_percentage_24h.toFixed(2) + " %"
             document.getElementById("trendingChangeP" + i).style.color = "#06ad00"
         } else {
+            document.getElementById("trendingChangeP" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h.toFixed(2) + " %"
             document.getElementById("trendingChangeP" + i).style.color = "#ad0000"
         }
     }
 }
 
 function assignTable(dataAPI) {
-    for (let i = 1; i < 4; i++) {
+    for (let i = 1; i < 11; i++) {
         document.getElementById("tableRank" + i).innerHTML = dataAPI[i - 1].market_cap_rank
+        document.getElementById("tableImg" + i).src = dataAPI[i - 1].image
         document.getElementById("tableName" + i).innerHTML = dataAPI[i - 1].name
         document.getElementById("tablePrice" + i).innerHTML = "$" + dataAPI[i - 1].current_price
         document.getElementById("table24P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
@@ -68,10 +70,29 @@ function sparklineGenerator(dataAPI, n) {
             elements: {
                 line: {
                     tension: 0.2,
-                    borderColor: '#111'
+                    borderColor: '#fff'
                 }
             }
         }
     });
 
+}
+
+function searchTable() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("coinTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[2];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
 }

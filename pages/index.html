@@ -30,7 +30,7 @@
 
     <!--BANNER-->
     <div class="container-fluid"
-        style="text-align: center; height: 530px; background-image: url(../images/banner-bg.jpg); padding: 40px 20px;">
+        style="text-align: center; height: 500px; background-image: url(../images/banner-bg.jpg); padding: 40px 20px;">
         <h2>Crypto Tracker</h2>
         <h6 style="margin-top: 20px;">Il prezzo delle tue crypto preferite in tempo reale!</h6>
 
@@ -92,10 +92,18 @@
             FETCH
         </button>
 
-        <table class="table align-middle">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+                <img src="../images/lens.png" width="28" height="28">
+            </span>
+            <input type="text" class="form-control" placeholder="Cerca per nome..." id="searchInput" onkeyup="searchTable()">
+          </div>
+
+        <table class="table align-middle" style="color: white;" id="coinTable">
             <thead>
                 <tr>
                     <th>Rank</th>
+                    <th>Logo</th>
                     <th>Name</th>
                     <th>Price</th>
                     <th>24h%</th>
@@ -108,6 +116,9 @@
             <tbody>
                 <tr>
                     <td id="tableRank1"></td>
+                    <td>
+                        <img id="tableImg1" width="50" height="50">
+                    </td>
                     <td id="tableName1"></td>
                     <td id="tablePrice1"></td>
                     <td id="table24P1"></td>
@@ -120,6 +131,9 @@
                 </tr>
                 <tr>
                     <td id="tableRank2"></td>
+                    <td>
+                        <img id="tableImg2" width="50" height="50">
+                    </td>
                     <td id="tableName2"></td>
                     <td id="tablePrice2"></td>
                     <td id="table24P2"></td>
@@ -132,6 +146,9 @@
                 </tr>
                 <tr>
                     <td id="tableRank3"></td>
+                    <td>
+                        <img id="tableImg3" width="50" height="50">
+                    </td>
                     <td id="tableName3"></td>
                     <td id="tablePrice3"></td>
                     <td id="table24P3"></td>
@@ -140,6 +157,111 @@
                     <td id="tableMarketcap3"></td>
                     <td style="width: 300px; height: 60px;">
                         <canvas id="tableSparkline3" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank4"></td>
+                    <td>
+                        <img id="tableImg4" width="50" height="50">
+                    </td>
+                    <td id="tableName4"></td>
+                    <td id="tablePrice4"></td>
+                    <td id="table24P4"></td>
+                    <td id="table7P4"></td>
+                    <td id="table30P4"></td>
+                    <td id="tableMarketcap4"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline4" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank5"></td>
+                    <td>
+                        <img id="tableImg5" width="50" height="50">
+                    </td>
+                    <td id="tableName5"></td>
+                    <td id="tablePrice5"></td>
+                    <td id="table24P5"></td>
+                    <td id="table7P5"></td>
+                    <td id="table30P5"></td>
+                    <td id="tableMarketcap5"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline5" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank6"></td>
+                    <td>
+                        <img id="tableImg6" width="50" height="50">
+                    </td>
+                    <td id="tableName6"></td>
+                    <td id="tablePrice6"></td>
+                    <td id="table24P6"></td>
+                    <td id="table7P6"></td>
+                    <td id="table30P6"></td>
+                    <td id="tableMarketcap6"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline6" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank7"></td>
+                    <td>
+                        <img id="tableImg7" width="50" height="50">
+                    </td>
+                    <td id="tableName7"></td>
+                    <td id="tablePrice7"></td>
+                    <td id="table24P7"></td>
+                    <td id="table7P7"></td>
+                    <td id="table30P7"></td>
+                    <td id="tableMarketcap7"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline7" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank8"></td>
+                    <td>
+                        <img id="tableImg8" width="50" height="50">
+                    </td>
+                    <td id="tableName8"></td>
+                    <td id="tablePrice8"></td>
+                    <td id="table24P8"></td>
+                    <td id="table7P8"></td>
+                    <td id="table30P8"></td>
+                    <td id="tableMarketcap8"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline8" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank9"></td>
+                    <td>
+                        <img id="tableImg9" width="50" height="50">
+                    </td>
+                    <td id="tableName9"></td>
+                    <td id="tablePrice9"></td>
+                    <td id="table24P9"></td>
+                    <td id="table7P9"></td>
+                    <td id="table30P9"></td>
+                    <td id="tableMarketcap9"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline9" width="300" height="60"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tableRank10"></td>
+                    <td>
+                        <img id="tableImg10" width="50" height="50">
+                    </td>
+                    <td id="tableName10"></td>
+                    <td id="tablePrice10"></td>
+                    <td id="table24P10"></td>
+                    <td id="table7P10"></td>
+                    <td id="table30P10"></td>
+                    <td id="tableMarketcap10"></td>
+                    <td style="width: 300px; height: 60px;">
+                        <canvas id="tableSparkline10" width="300" height="60"></canvas>
                     </td>
                 </tr>
             </tbody>
