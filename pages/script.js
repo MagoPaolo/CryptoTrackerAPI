@@ -1,5 +1,5 @@
 async function fetchData() {
-    const response = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=true&price_change_percentage=24h%2C7d%2C30d&locale=en");
+    const response = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=true&price_change_percentage=24h%2C7d%2C30d&locale=en");
     const dataAPI = await response.json();
     assignTrending(dataAPI);
     assignTable(dataAPI);
@@ -8,28 +8,48 @@ async function fetchData() {
 function assignTrending(dataAPI) {
     for (let i = 1; i < 6; i++) {
         document.getElementById("trendingName" + i).innerHTML = dataAPI[i - 1].name
-        document.getElementById("trendingPrice" + i).innerHTML = "$" + dataAPI[i - 1].current_price
+        document.getElementById("trendingPrice" + i).innerHTML = "$" + dataAPI[i - 1].current_price.toString().slice(0, 7)
         document.getElementById("trendingImg" + i).src = dataAPI[i - 1].image
         if (dataAPI[i - 1].price_change_percentage_24h >= 0) {
             document.getElementById("trendingChangeP" + i).innerHTML = "+" + dataAPI[i - 1].price_change_percentage_24h.toFixed(2) + " %"
-            document.getElementById("trendingChangeP" + i).style.color = "#06ad00"
+            document.getElementById("trendingChangeP" + i).style.color = "#00BF00"
         } else {
             document.getElementById("trendingChangeP" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h.toFixed(2) + " %"
-            document.getElementById("trendingChangeP" + i).style.color = "#ad0000"
+            document.getElementById("trendingChangeP" + i).style.color = "#BF0413"
         }
     }
 }
 
 function assignTable(dataAPI) {
-    for (let i = 1; i < 11; i++) {
+    for (let i = 1; i < 16; i++) {
         document.getElementById("tableRank" + i).innerHTML = dataAPI[i - 1].market_cap_rank
+        document.getElementById("tableRank" + i).style.fontWeight = "600"
         document.getElementById("tableImg" + i).src = dataAPI[i - 1].image
         document.getElementById("tableName" + i).innerHTML = dataAPI[i - 1].name
-        document.getElementById("tablePrice" + i).innerHTML = "$" + dataAPI[i - 1].current_price
-        document.getElementById("table24P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
-        document.getElementById("table7P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_7d_in_currency.toFixed(2) + " %"
-        document.getElementById("table30P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_30d_in_currency.toFixed(2) + " %"
-        document.getElementById("tableMarketcap" + i).innerHTML = "$" + dataAPI[i - 1].market_cap
+        document.getElementById("tableName" + i).style.fontWeight = "600"
+        document.getElementById("tablePrice" + i).innerHTML = "$" + dataAPI[i - 1].current_price.toString().slice(0, 7)
+        document.getElementById("tableMarketcap" + i).innerHTML = "$" + dataAPI[i - 1].market_cap.toLocaleString(undefined, { maximumFractionDigits: 0 })
+        if(dataAPI[i - 1].price_change_percentage_24h_in_currency >= 0) {
+            document.getElementById("table24P" + i).innerHTML = "+" + dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
+            document.getElementById("table24P" + i).style.color = "#00BF00"
+        } else {
+            document.getElementById("table24P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
+            document.getElementById("table24P" + i).style.color = "#BF0413"
+        }
+        if(dataAPI[i - 1].price_change_percentage_7d_in_currency >= 0) {
+            document.getElementById("table7P" + i).innerHTML = "+" + dataAPI[i - 1].price_change_percentage_7d_in_currency.toFixed(2) + " %"
+            document.getElementById("table7P" + i).style.color = "#00BF00"
+        } else {
+            document.getElementById("table7P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
+            document.getElementById("table7P" + i).style.color = "#BF0413"
+        }
+        if(dataAPI[i - 1].price_change_percentage_30d_in_currency >= 0) {
+            document.getElementById("table30P" + i).innerHTML = "+" + dataAPI[i - 1].price_change_percentage_30d_in_currency.toFixed(2) + " %"
+            document.getElementById("table30P" + i).style.color = "#00BF00"
+        } else {
+            document.getElementById("table30P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
+            document.getElementById("table30P" + i).style.color = "#BF0413"
+        }
         sparklineGenerator(dataAPI[i - 1], i)
     }
 }
@@ -43,7 +63,6 @@ function sparklineGenerator(dataAPI, n) {
         }
     }
     const ctx = document.getElementById('tableSparkline' + n);
-    console.log(days)
     new Chart(ctx, {
         type: 'line',
         data: {
@@ -70,7 +89,7 @@ function sparklineGenerator(dataAPI, n) {
             elements: {
                 line: {
                     tension: 0.2,
-                    borderColor: '#fff'
+                    borderColor: '#acecff'
                 }
             }
         }
