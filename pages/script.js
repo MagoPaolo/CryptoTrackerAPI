@@ -22,6 +22,8 @@ function assignTrending(dataAPI) {
 
 function assignTable(dataAPI) {
     for (let i = 1; i < 26; i++) {
+        var a = document.getElementById("link" + i);
+        a.href = "coin.html?" + dataAPI[i - 1].market_cap_rank
         document.getElementById("tableRank" + i).innerHTML = dataAPI[i - 1].market_cap_rank
         document.getElementById("tableRank" + i).style.fontWeight = "600"
         document.getElementById("tableImg" + i).src = dataAPI[i - 1].image
@@ -29,21 +31,21 @@ function assignTable(dataAPI) {
         document.getElementById("tableName" + i).style.fontWeight = "600"
         document.getElementById("tablePrice" + i).innerHTML = "$" + dataAPI[i - 1].current_price.toString().slice(0, 7)
         document.getElementById("tableMarketcap" + i).innerHTML = "$" + dataAPI[i - 1].market_cap.toLocaleString(undefined, { maximumFractionDigits: 0 })
-        if(dataAPI[i - 1].price_change_percentage_24h_in_currency >= 0) {
+        if (dataAPI[i - 1].price_change_percentage_24h_in_currency >= 0) {
             document.getElementById("table24P" + i).innerHTML = "+" + dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
             document.getElementById("table24P" + i).style.color = "#00BF00"
         } else {
             document.getElementById("table24P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
             document.getElementById("table24P" + i).style.color = "#BF0413"
         }
-        if(dataAPI[i - 1].price_change_percentage_7d_in_currency >= 0) {
+        if (dataAPI[i - 1].price_change_percentage_7d_in_currency >= 0) {
             document.getElementById("table7P" + i).innerHTML = "+" + dataAPI[i - 1].price_change_percentage_7d_in_currency.toFixed(2) + " %"
             document.getElementById("table7P" + i).style.color = "#00BF00"
         } else {
             document.getElementById("table7P" + i).innerHTML = dataAPI[i - 1].price_change_percentage_24h_in_currency.toFixed(2) + " %"
             document.getElementById("table7P" + i).style.color = "#BF0413"
         }
-        if(dataAPI[i - 1].price_change_percentage_30d_in_currency >= 0) {
+        if (dataAPI[i - 1].price_change_percentage_30d_in_currency >= 0) {
             document.getElementById("table30P" + i).innerHTML = "+" + dataAPI[i - 1].price_change_percentage_30d_in_currency.toFixed(2) + " %"
             document.getElementById("table30P" + i).style.color = "#00BF00"
         } else {
