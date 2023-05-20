@@ -32,52 +32,52 @@
 
     <!--BANNER-->
     <div class="container-fluid"
-        style="text-align: center; height: 500px; background-image: url(../images/banner-bg.jpg); padding: 40px 20px;">
+        style="text-align: center; height: 520px; background-image: url(../images/banner-bg.jpg); padding: 40px 20px;">
         <h2>Crypto Tracker</h2>
         <h6 style="margin-top: 20px;">Il prezzo delle tue crypto preferite in tempo reale!</h6>
         <h3 style=" margin-top: 60px; margin-bottom: 10px;">Trending</h3>
-        <div class="container-fluid" style="text-align: center; display: flex; justify-content: center;">
-            <a href="#" style="margin: 0px 50px">
-                <img id="trendingImg1" width="100" height="100">
+        <div class="container" style="text-align: center; display: flex; justify-content: center;">
+            <a id="trendingLink1" href="" style="margin: 0px 50px; width: 250px;">
+                <img id="trendingImg1" width="100" height="100" style="margin-bottom: 5px;">
                 <br>
                 <span id="trendingName1" style="font-weight: 700;">ERR</span>
-                &nbsp;
+                <br>
                 <span id="trendingChangeP1" style="font-weight: 500;">ERR</span>
                 <br>
                 <span id="trendingPrice1" style="font-weight: 600; font-size: 28px;">ERR</span>
             </a>
-            <a href="#" style="margin: 0px 50px">
-                <img id="trendingImg2" width="100" height="100">
+            <a id="trendingLink2" href="" style="margin: 0px 50px; width: 250px;">
+                <img id="trendingImg2" width="100" height="100" style="margin-bottom: 5px;">
                 <br>
                 <span id="trendingName2" style="font-weight: 700;">ERR</span>
-                &nbsp;
+                <br>
                 <span id="trendingChangeP2" style="font-weight: 500;">ERR</span>
                 <br>
                 <span id="trendingPrice2" style="font-weight: 600; font-size: 28px;">ERR</span>
             </a>
-            <a href="#" style="margin: 0px 50px">
-                <img id="trendingImg3" width="100" height="100">
+            <a id="trendingLink3" href="" style="margin: 0px 50px; width: 250px;">
+                <img id="trendingImg3" width="100" height="100" style="margin-bottom: 5px;">
                 <br>
                 <span id="trendingName3" style="font-weight: 700;">ERR</span>
-                &nbsp;
+                <br>
                 <span id="trendingChangeP3" style="font-weight: 500;">ERR</span>
                 <br>
                 <span id="trendingPrice3" style="font-weight: 600; font-size: 28px;">ERR</span>
             </a>
-            <a href="#" style="margin: 0px 50px">
-                <img id="trendingImg4" width="100" height="100">
+            <a id="trendingLink4" href="" style="margin: 0px 50px; width: 250px;">
+                <img id="trendingImg4" width="100" height="100" style="margin-bottom: 5px;">
                 <br>
                 <span id="trendingName4" style="font-weight: 700;">ERR</span>
-                &nbsp;
+                <br>
                 <span id="trendingChangeP4" style="font-weight: 500;">ERR</span>
                 <br>
                 <span id="trendingPrice4" style="font-weight: 600; font-size: 28px;">ERR</span>
             </a>
-            <a href="#" style="margin: 0px 50px">
-                <img id="trendingImg5" width="100" height="100">
+            <a id="trendingLink5" href="" style="margin: 0px 50px; width: 250px;">
+                <img id="trendingImg5" width="100" height="100" style="margin-bottom: 5px;">
                 <br>
                 <span id="trendingName5" style="font-weight: 700;">ERR</span>
-                &nbsp;
+                <br>
                 <span id="trendingChangeP5" style="font-weight: 500;">ERR</span>
                 <br>
                 <span id="trendingPrice5" style="font-weight: 600; font-size: 28px;">ERR</span>
@@ -118,423 +118,279 @@
             </thead>
             <tbody>
                 <tr>
-                    <td id="tableRank1"></td>
-                    <td>
-                        <a id="link1" href="">
-                            <img id="tableImg1" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName1"></td>
-                    <td id="tablePrice1"></td>
-                    <td id="table24P1"></td>
-                    <td id="table7P1"></td>
-                    <td id="table30P1"></td>
-                    <td id="tableMarketcap1"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline1" width="300" height="60"></canvas>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td id="tableRank2"></td>
-                    <td>
-                        <a id="link2" href="">
-                            <img id="tableImg2" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName2"></td>
-                    <td id="tablePrice2"></td>
-                    <td id="table24P2"></td>
-                    <td id="table7P2"></td>
-                    <td id="table30P2"></td>
-                    <td id="tableMarketcap2"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline2" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank1" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink1" href=""><img id="tableImg1" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName1" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice1" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P1" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P1" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P1" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap1" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline1" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank3"></td>
-                    <td>
-                        <a id="link3" href="">
-                            <img id="tableImg3" width="50" height="50">
-                        </a>                    </td>
-                    <td id="tableName3"></td>
-                    <td id="tablePrice3"></td>
-                    <td id="table24P3"></td>
-                    <td id="table7P3"></td>
-                    <td id="table30P3"></td>
-                    <td id="tableMarketcap3"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline3" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank2" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink2" href=""><img id="tableImg2" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName2" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice2" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P2" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P2" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P2" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap2" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline2" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank4"></td>
-                    <td>
-                        <a id="link4" href="">
-                            <img id="tableImg4" width="50" height="50">
-                        </a>                    </td>
-                    <td id="tableName4"></td>
-                    <td id="tablePrice4"></td>
-                    <td id="table24P4"></td>
-                    <td id="table7P4"></td>
-                    <td id="table30P4"></td>
-                    <td id="tableMarketcap4"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline4" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank3" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink3" href=""><img id="tableImg3" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName3" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice3" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P3" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P3" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P3" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap3" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline3" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank5"></td>
-                    <td>
-                        <a id="link5" href="">
-                            <img id="tableImg5" width="50" height="50">
-                        </a>                    </td>
-                    <td id="tableName5"></td>
-                    <td id="tablePrice5"></td>
-                    <td id="table24P5"></td>
-                    <td id="table7P5"></td>
-                    <td id="table30P5"></td>
-                    <td id="tableMarketcap5"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline5" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank4" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink4" href=""><img id="tableImg4" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName4" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice4" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P4" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P4" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P4" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap4" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline4" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank6"></td>
-                    <td>
-                        <a id="link6" href="">
-                            <img id="tableImg6" width="50" height="50">
-                        </a>                    </td>
-                    <td id="tableName6"></td>
-                    <td id="tablePrice6"></td>
-                    <td id="table24P6"></td>
-                    <td id="table7P6"></td>
-                    <td id="table30P6"></td>
-                    <td id="tableMarketcap6"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline6" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank5" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink5" href=""><img id="tableImg5" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName5" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice5" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P5" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P5" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P5" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap5" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline5" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank7"></td>
-                    <td>
-                        <a id="link7" href="">
-                            <img id="tableImg7" width="50" height="50">
-                        </a>                    </td>
-                    <td id="tableName7"></td>
-                    <td id="tablePrice7"></td>
-                    <td id="table24P7"></td>
-                    <td id="table7P7"></td>
-                    <td id="table30P7"></td>
-                    <td id="tableMarketcap7"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline7" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank6" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink6" href=""><img id="tableImg6" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName6" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice6" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P6" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P6" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P6" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap6" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline6" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank8"></td>
-                    <td>
-                        <a id="link8" href="">
-                            <img id="tableImg8" width="50" height="50">
-                        </a>                    </td>
-                    <td id="tableName8"></td>
-                    <td id="tablePrice8"></td>
-                    <td id="table24P8"></td>
-                    <td id="table7P8"></td>
-                    <td id="table30P8"></td>
-                    <td id="tableMarketcap8"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline8" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank7" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink7" href=""><img id="tableImg7" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName7" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice7" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P7" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P7" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P7" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap7" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline7" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank9"></td>
-                    <td>
-                        <a id="link9" href="">
-                            <img id="tableImg9" width="50" height="50">
-                        </a>                    </td>
-                    <td id="tableName9"></td>
-                    <td id="tablePrice9"></td>
-                    <td id="table24P9"></td>
-                    <td id="table7P9"></td>
-                    <td id="table30P9"></td>
-                    <td id="tableMarketcap9"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline9" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank8" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink8" href=""><img id="tableImg8" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName8" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice8" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P8" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P8" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P8" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap8" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline8" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank10"></td>
-                    <td>
-                        <a id="link10" href="">
-                            <img id="tableImg10" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName10"></td>
-                    <td id="tablePrice10"></td>
-                    <td id="table24P10"></td>
-                    <td id="table7P10"></td>
-                    <td id="table30P10"></td>
-                    <td id="tableMarketcap10"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline10" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank9" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink9" href=""><img id="tableImg9" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName9" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice9" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P9" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P9" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P9" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap9" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline9" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank11"></td>
-                    <td>
-                        <a id="link11" href="">
-                            <img id="tableImg11" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName11"></td>
-                    <td id="tablePrice11"></td>
-                    <td id="table24P11"></td>
-                    <td id="table7P11"></td>
-                    <td id="table30P11"></td>
-                    <td id="tableMarketcap11"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline11" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank10" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink10" href=""><img id="tableImg10" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName10" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice10" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P10" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P10" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P10" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap10" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline10" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank12"></td>
-                    <td>
-                        <a id="link12" href="">
-                            <img id="tableImg12" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName12"></td>
-                    <td id="tablePrice12"></td>
-                    <td id="table24P12"></td>
-                    <td id="table7P12"></td>
-                    <td id="table30P12"></td>
-                    <td id="tableMarketcap12"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline12" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank11" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink11" href=""><img id="tableImg11" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName11" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice11" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P11" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P11" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P11" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap11" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline11" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank13"></td>
-                    <td>
-                        <a id="link13" href="">
-                            <img id="tableImg13" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName13"></td>
-                    <td id="tablePrice13"></td>
-                    <td id="table24P13"></td>
-                    <td id="table7P13"></td>
-                    <td id="table30P13"></td>
-                    <td id="tableMarketcap13"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline13" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank12" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink12" href=""><img id="tableImg12" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName12" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice12" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P12" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P12" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P12" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap12" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline12" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank14"></td>
-                    <td>
-                        <a id="link14" href="">
-                            <img id="tableImg14" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName14"></td>
-                    <td id="tablePrice14"></td>
-                    <td id="table24P14"></td>
-                    <td id="table7P14"></td>
-                    <td id="table30P14"></td>
-                    <td id="tableMarketcap14"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline14" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank13" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink13" href=""><img id="tableImg13" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName13" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice13" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P13" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P13" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P13" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap13" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline13" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank15"></td>
-                    <td>
-                        <a id="link15" href="">
-                            <img id="tableImg15" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName15"></td>
-                    <td id="tablePrice15"></td>
-                    <td id="table24P15"></td>
-                    <td id="table7P15"></td>
-                    <td id="table30P15"></td>
-                    <td id="tableMarketcap15"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline15" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank14" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink14" href=""><img id="tableImg14" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName14" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice14" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P14" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P14" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P14" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap14" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline14" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank16"></td>
-                    <td>
-                        <a id="link16" href="">
-                            <img id="tableImg16" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName16"></td>
-                    <td id="tablePrice16"></td>
-                    <td id="table24P16"></td>
-                    <td id="table7P16"></td>
-                    <td id="table30P16"></td>
-                    <td id="tableMarketcap16"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline16" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank15" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink15" href=""><img id="tableImg15" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName15" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice15" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P15" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P15" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P15" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap15" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline15" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank17"></td>
-                    <td>
-                        <a id="link17" href="">
-                            <img id="tableImg17" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName17"></td>
-                    <td id="tablePrice17"></td>
-                    <td id="table24P17"></td>
-                    <td id="table7P17"></td>
-                    <td id="table30P17"></td>
-                    <td id="tableMarketcap17"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline17" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank16" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink16" href=""><img id="tableImg16" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName16" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice16" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P16" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P16" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P16" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap16" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline16" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank18"></td>
-                    <td>
-                        <a id="link18" href="">
-                            <img id="tableImg18" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName18"></td>
-                    <td id="tablePrice18"></td>
-                    <td id="table24P18"></td>
-                    <td id="table7P18"></td>
-                    <td id="table30P18"></td>
-                    <td id="tableMarketcap18"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline18" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank17" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink17" href=""><img id="tableImg17" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName17" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice17" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P17" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P17" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P17" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap17" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline17" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank19"></td>
-                    <td>
-                        <a id="link19" href="">
-                            <img id="tableImg19" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName19"></td>
-                    <td id="tablePrice19"></td>
-                    <td id="table24P19"></td>
-                    <td id="table7P19"></td>
-                    <td id="table30P19"></td>
-                    <td id="tableMarketcap19"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline19" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank18" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink18" href=""><img id="tableImg18" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName18" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice18" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P18" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P18" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P18" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap18" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline18" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank20"></td>
-                    <td>
-                        <a id="link20" href="">
-                            <img id="tableImg20" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName20"></td>
-                    <td id="tablePrice20"></td>
-                    <td id="table24P20"></td>
-                    <td id="table7P20"></td>
-                    <td id="table30P20"></td>
-                    <td id="tableMarketcap20"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline20" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank19" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink19" href=""><img id="tableImg19" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName19" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice19" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P19" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P19" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P19" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap19" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline19" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank21"></td>
-                    <td>
-                        <a id="link21" href="">
-                            <img id="tableImg21" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName21"></td>
-                    <td id="tablePrice21"></td>
-                    <td id="table24P21"></td>
-                    <td id="table7P21"></td>
-                    <td id="table30P21"></td>
-                    <td id="tableMarketcap21"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline21" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank20" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink20" href=""><img id="tableImg20" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName20" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice20" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P20" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P20" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P20" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap20" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline20" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank22"></td>
-                    <td>
-                        <a id="link22" href="">
-                            <img id="tableImg22" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName22"></td>
-                    <td id="tablePrice22"></td>
-                    <td id="table24P22"></td>
-                    <td id="table7P22"></td>
-                    <td id="table30P22"></td>
-                    <td id="tableMarketcap22"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline22" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank21" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink21" href=""><img id="tableImg21" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName21" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice21" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P21" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P21" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P21" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap21" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline21" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank23"></td>
-                    <td>
-                        <a id="link23" href="">
-                            <img id="tableImg23" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName23"></td>
-                    <td id="tablePrice23"></td>
-                    <td id="table24P23"></td>
-                    <td id="table7P23"></td>
-                    <td id="table30P23"></td>
-                    <td id="tableMarketcap23"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline23" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank22" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink22" href=""><img id="tableImg22" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName22" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice22" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P22" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P22" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P22" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap22" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline22" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank24"></td>
-                    <td>
-                        <a id="link24" href="">
-                            <img id="tableImg24" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName24"></td>
-                    <td id="tablePrice24"></td>
-                    <td id="table24P24"></td>
-                    <td id="table7P24"></td>
-                    <td id="table30P24"></td>
-                    <td id="tableMarketcap24"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline24" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank23" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink23" href=""><img id="tableImg23" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName23" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice23" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P23" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P23" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P23" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap23" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline23" width="300" height="60"></canvas></td>
                 </tr>
                 <tr>
-                    <td id="tableRank25"></td>
-                    <td>
-                        <a id="link25" href="">
-                            <img id="tableImg25" width="50" height="50">
-                        </a>
-                    </td>
-                    <td id="tableName25"></td>
-                    <td id="tablePrice25"></td>
-                    <td id="table24P25"></td>
-                    <td id="table7P25"></td>
-                    <td id="table30P25"></td>
-                    <td id="tableMarketcap25"></td>
-                    <td style="width: 300px; height: 60px;">
-                        <canvas id="tableSparkline25" width="300" height="60"></canvas>
-                    </td>
+                    <td><a href="" id="tableRank24" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink24" href=""><img id="tableImg24" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName24" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice24" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P24" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P24" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P24" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap24" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline24" width="300" height="60"></canvas></td>
+                </tr>
+                <tr>
+                    <td><a href="" id="tableRank25" style="font-size: 18px;"></a></td>
+                    <td><a id="tableImgLink25" href=""><img id="tableImg25" width="50" height="50"></a></td>
+                    <td><a href="" id="tableName25" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tablePrice25" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table24P25" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table7P25" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="table30P25" style="font-size: 18px;"></a></td>
+                    <td><a href="" id="tableMarketcap25" style="font-size: 18px;"></a></td>
+                    <td style="width: 300px; height: 60px;"><canvas id="tableSparkline25" width="300" height="60"></canvas></td>
                 </tr>
             </tbody>
         </table>
