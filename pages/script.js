@@ -99,8 +99,8 @@ function sparklineGenerator(dataAPI, n) {
             },
             elements: {
                 line: {
-                    tension: 0.2,
-                    borderColor: '#acecff'
+                    tension: 0.1,
+                    borderColor: '#00ADB5'
                 }
             }
         }

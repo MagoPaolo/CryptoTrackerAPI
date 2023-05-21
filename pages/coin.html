@@ -15,7 +15,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="fetchCoin(); fetchDescription()">
     <!--NAVBAR-->
     <nav class="navbar shadow">
         <div class="container-fluid" style="padding: 7px 0px 7px 50px">
@@ -29,54 +29,53 @@
 
     <!--COIN INFO-->
     <div class="container-fluid" style="text-align: center; display: block; justify-content: center;">
-        <button class="btn btn-dark" style="padding: 5px 20px; margin-bottom: 20px;"
-            onclick="fetchCoin(); fetchDescription()">
-            FETCH
-        </button>
         <div class="container">
-            <div style="text-align: center; display: flex; justify-content: center;">
+            <div style="text-align: center; display: flex; justify-content: center; margin-top: 40px;">
                 <img id="coinImg" width="40" height="40" style="margin-right: 5px;">
                 <h1 id="coinName"></h1>
                 <h6 id="coinSymbol" style="text-transform: uppercase; font-weight: 700;"></h6>
             </div>
             <div style="text-align: center; display: flex; justify-content: center;">
-                <div style="margin: 10px 50px">
+                <div style="margin: 20px 70px">
                     <span style="font-weight: 600; font-size: 28px;">rank</span>
                     <br>
                     <span style="font-weight: 600; font-size: 28px;" id="coinRank"></span>
                 </div>
-                <div style="margin: 10px 50px">
+                <div style="margin: 20px 70px">
                     <span style="font-weight: 600; font-size: 28px;">price</span>
                     <br>
                     <span style="font-weight: 600; font-size: 28px;" id="coinPrice"></span>
                 </div>
-                <div style="margin: 10px 50px">
+                <div style="margin: 20px 70px">
                     <span style="font-weight: 600; font-size: 28px;">ath</span>
                     <br>
                     <span style="font-weight: 600; font-size: 28px;" id="coinAth"></span>
                 </div>
-                <div style="margin: 10px 50px">
+                <div style="margin: 20px 70px">
                     <span style="font-weight: 600; font-size: 28px;">ath %</span>
                     <br>
                     <span style="font-weight: 600; font-size: 28px;" id="coinAthP"></span>
                 </div>
-                <div style="margin: 10px 50px">
+                <div style="margin: 20px 70px">
                     <span style="font-weight: 600; font-size: 28px;">market cap</span>
                     <br>
                     <span style="font-weight: 600; font-size: 28px;" id="coinMarketCap"></span>
                 </div>
             </div>
-            <div>
+            <div style="margin-bottom: 30px;">
                 <p id="coinDescription"></p>
             </div>
-            <div style=" width: 720px; height: 405px; margin-left: 30px">
-                <div>
-                    <canvas id="coinSparkline" width="720" height="405"></canvas>
-                </div>
+            <div style=" width: 800px; height: 450px; margin: auto;">
+                <canvas id="coinSparkline" width="720px" height="405px"></canvas>
             </div>
         </div>
     </div>
 
+    <div class="container-fluid">
+        <footer style="text-align: center; margin-top: 100px; height: 50px;">
+            <span>sito realizzato a scopo didattico | MagoPaolo</span>
+        </footer>
+    </div>
 
     <script>
         function coinSparkline(dataAPI) {
@@ -116,7 +115,7 @@
                     elements: {
                         line: {
                             tension: 0.1,
-                            borderColor: '#acecff'
+                            borderColor: '#00ADB5'
                         }
                     }
                 }
@@ -141,7 +140,7 @@
             document.getElementById("coinName").innerHTML = coinAPI.name
             document.getElementById("coinSymbol").innerHTML = coinAPI.symbol
             document.getElementById("coinPrice").innerHTML = "$" + coinAPI.market_data.current_price.usd
-            document.getElementById("coinAth").innerHTML = coinAPI.market_data.ath.usd
+            document.getElementById("coinAth").innerHTML = "$" + coinAPI.market_data.ath.usd
             document.getElementById("coinAthP").innerHTML = coinAPI.market_data.ath_change_percentage.usd
             document.getElementById("coinMarketCap").innerHTML = "$" + coinAPI.market_data.market_cap.usd.toLocaleString(undefined, { maximumFractionDigits: 0 })
             document.getElementById("coinDescription").innerHTML = coinAPI.description.en

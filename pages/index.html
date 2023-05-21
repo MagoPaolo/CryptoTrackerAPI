@@ -15,7 +15,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="fetchData()">
 
     <!--NAVBAR-->
     <nav class="navbar shadow">
@@ -89,9 +89,6 @@
 
     <!--TABLE-->
     <div class="container" style="margin-top: 30px; text-align: center;">
-        <button class="btn btn-dark" style="padding: 5px 20px; margin-bottom: 20px;" onclick="fetchData()">
-            FETCH
-        </button>
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">
@@ -102,7 +99,7 @@
         </div>
 
         <table class="table align-middle"
-            style="margin-top: 20px; color: white; border-color: rgba(255, 255, 255, 0.2);" id="coinTable">
+            style="margin-top: 20px; color: #EEEEEE; border-color: rgba(255, 255, 255, 0.2);" id="coinTable">
             <thead>
                 <tr>
                     <th>Rank</th>
