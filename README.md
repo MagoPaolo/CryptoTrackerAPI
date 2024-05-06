@@ -4,7 +4,7 @@
 
 <h2>Link sito web</h2>
 
-[Crypto tracker API]([https://www.github.com/PolTheWizard](https://paolo3ic.altervista.org/pages/index.html))
+[CryptotrackerAPI]([https://www.github.com/PolTheWizard](https://paolo3ic.altervista.org/pages/index.html))
 
 <h2>API Reference</h2>
 
