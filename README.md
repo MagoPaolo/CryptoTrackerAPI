@@ -4,13 +4,13 @@
 
 <h2>Link sito web</h2>
 
-- [Crypto tracker API](https://paolo3ic.altervista.org/pages/index.html)
+[Crypto tracker API](https://paolo3ic.altervista.org/pages/index.html)
 
 <h2>API Reference</h2>
 
-- [CoinGeckoAPI](https://www.coingecko.com/it/api/documentation)
+[CoinGeckoAPI](https://www.coingecko.com/it/api/documentation)
 
 <h2>Author</h2>
 
 Magri Paolo
-- [@MagoPaolo](https://www.github.com/MagoPaolo)
+[@MagoPaolo](https://www.github.com/MagoPaolo)
