@@ -4,7 +4,7 @@
 
 <h2>Link sito web</h2>
 
-- [CryptotrackerAPI]([https://www.github.com/PolTheWizard](https://paolo3ic.altervista.org/pages/index.html))
+- [Crypto tracker API](https://paolo3ic.altervista.org/pages/index.html)
 
 <h2>API Reference</h2>
 
@@ -13,4 +13,4 @@
 <h2>Author</h2>
 
 Magri Paolo
-- [@PolTheWizard](https://www.github.com/PolTheWizard)
+- [@MagoPaolo](https://www.github.com/MagoPaolo)
